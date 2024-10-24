@@ -59,6 +59,13 @@ nav ul li a:hover {
     margin-bottom: 40px; /* Abstand unter dem Absatz */
 }
 
+.landing-image {
+    float: right; /* Bild nach rechts ausrichten */
+    width: 300px; /* Breite des Bildes anpassen */
+    margin-left: 20px; /* Abstand zum Text */
+    border-radius: 8px; /* Abgerundete Ecken */
+}
+
 .buttons {
     display: flex;
     justify-content: flex-start; /* Buttons linksbündig ausrichten */
