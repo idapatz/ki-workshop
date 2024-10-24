@@ -94,6 +94,18 @@
                     alert('Error: ' + errorMessage);
                 });
         }
-    </script>
+  <!-- Modal für die Registrierung -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Registrierung</h2>
+            <form onsubmit="registerUser(); return false;">
+                <input type="email" id="email" placeholder="E-Mail-Adresse" required />
+                <input type="password" id="password" placeholder="Passwort" required />
+                <button type="submit" class="btn btn-green">Registrieren</button>
+            </form>
+        </div>
+    </div>
+      </script>
 </body>
 </html>
