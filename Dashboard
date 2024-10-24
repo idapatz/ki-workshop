@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="welcomeMessage"></h1>
+        <nav>
+            <ul>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#resources">Ressourcen</a></li>
+                <li><a href="#logout" onclick="logoutUser()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="progress">
+        <h2>Fortschritt</h2>
+        <p>Hier kannst du deinen Fortschritt einsehen.</p>
+        <!-- Weitere Inhalte zur Fortschrittsübersicht -->
+    </section>
+
+    <section id="videos">
+        <h2>Verfügbare Videos</h2>
+        <!-- Links oder IFrames zu den Videos -->
+    </section>
+
+    <section id="quiz">
+        <h2>Quiz</h2>
+        <!-- Links zu den Quizzes -->
+    </section>
+
+    <section id="resources">
+        <h2>Ressourcen</h2>
+        <!-- Links zu zusätzlichen Ressourcen -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ida Patzelt</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Benutzer begrüßen
+        const user = firebase.auth().currentUser;
+        if (user) {
+            document.getElementById('welcomeMessage').innerText = `Willkommen zurück, ${user.email}!`;
+        }
+
+        // Funktion für Logout
+        function logoutUser() {
+            firebase.auth().signOut().then(() => {
+                alert('Erfolgreich abgemeldet');
+                window.location.href = 'index.html'; // Zurück zur Startseite
+            });
+        }
+    </script>
+</body>
+</html>
