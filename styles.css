@@ -37,13 +37,14 @@ nav ul li a:hover {
 }
 
 .landing {
-display: flex; /* Flexbox verwenden für die Anordnung von Text und Bild */
+    display: flex; /* Flexbox verwenden für die Anordnung von Text und Bild */
     justify-content: space-between; /* Platz zwischen Text und Bild */
     align-items: center; /* Vertikale Zentrierung */
     padding: 100px 20px;
     max-width: 800px; /* Begrenzung der Breite für bessere Lesbarkeit */
     margin: 0 auto; /* Zentriert den gesamten Container */
 }
+
 .landing h1, .landing p {
     margin: 0; /* Entfernt die Standardmargen */
 }
@@ -52,16 +53,18 @@ display: flex; /* Flexbox verwenden für die Anordnung von Text und Bild */
     font-size: 48px;
     line-height: 1.2;
     margin-bottom: 20px; /* Abstand unter der Überschrift */
+    max-width: 500px; /* Maximalbreite für den Text */
 }
 
 .landing p {
     line-height: 1.6;
     font-size: 18px;
     margin-bottom: 40px; /* Abstand unter dem Absatz */
+    max-width: 500px; /* Maximalbreite für den Text */
 }
 
 .landing-image {
-  width: 300px; /* Breite des Bildes anpassen */
+    width: 400px; /* Breite des Bildes anpassen */
     margin-left: 20px; /* Abstand zum Text */
     border-radius: 8px; /* Abgerundete Ecken */
 }
