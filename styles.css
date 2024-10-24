@@ -67,8 +67,8 @@ nav ul li a:hover {
 }
 
 .landing-image {
-    width: 400px; /* Breite des Bildes anpassen */
-    margin-left: 20px; /* Abstand zum Text */
+    width: 300px; /* Breite des Bildes anpassen */
+    height: auto; /* Automatische Höhe, um die Proportionen zu bewahren */
     border-radius: 8px; /* Abgerundete Ecken */
 }
 
