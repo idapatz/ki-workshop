@@ -44,10 +44,15 @@ nav ul li a:hover {
     margin: 0 auto; /* Zentriert den gesamten Container */
 }
 
+.landing h1, .landing p {
+    margin: 0; /* Entfernt die Standardmargen */
+    padding-left: 10px; /* Gleicher linker Abstand */
+}
+
 .landing h1 {
     font-size: 48px;
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Abstand unter der Überschrift */
 }
 
 .landing p {
@@ -61,7 +66,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: flex-start; /* Buttons linksbündig ausrichten */
     gap: 20px;
-    
+    padding-left: 10px; /* Gleicher linker Abstand wie der Text */
 }
 
 .btn {
