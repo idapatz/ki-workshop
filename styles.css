@@ -4,7 +4,6 @@ body {
     color: #fff; /* Textfarbe auf Weiß gesetzt */
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
 }
 
 header {
@@ -108,6 +107,7 @@ footer {
     margin-top: 20px;
     color: #fff; /* Textfarbe im Footer auf Weiß gesetzt */
 }
+
 /* Modal Container */
 .modal {
     display: none; /* Standardmäßig ausgeblendet */
@@ -123,12 +123,13 @@ footer {
 /* Modal Content */
 .modal-content {
     background-color: #fff;
-    margin: 15% auto;
+    margin: 10% auto; /* Positionierung des Modals etwas höher */
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
     max-width: 400px; /* Maximale Breite */
     text-align: center;
+    border-radius: 8px; /* Abgerundete Ecken für das Modal */
 }
 
 /* Close Button */
@@ -142,7 +143,7 @@ footer {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #39d353; /* Grüne Farbe bei Hover */
     text-decoration: none;
     cursor: pointer;
 }
