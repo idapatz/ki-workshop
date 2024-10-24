@@ -59,8 +59,9 @@ nav ul li a:hover {
 
 .buttons {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Buttons linksbündig ausrichten */
     gap: 20px;
+    
 }
 
 .btn {
