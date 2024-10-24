@@ -44,6 +44,7 @@ nav ul li a:hover {
     max-width: 800px; /* Begrenzung der Breite für bessere Lesbarkeit */
     margin: 0 auto; /* Zentriert den gesamten Container */
 }
+
 .text-container {
     max-width: 600px; /* Maximale Breite für den Text */
 }
@@ -67,8 +68,9 @@ nav ul li a:hover {
 }
 
 .landing-image {
-    width: 300px; /* Breite des Bildes anpassen */
-    height: auto; /* Automatische Höhe, um die Proportionen zu bewahren */
+    width: auto; /* Breite des Bildes automatisch anpassen */
+    height: 100%; /* Höhe des Bildes auf 100% setzen, um die gesamte Text-Höhe zu erreichen */
+    max-height: calc(100% + 60px); /* Maximale Höhe anpassen, um Überschrift und Text zu berücksichtigen (60px ist ein Beispielwert, du kannst ihn anpassen) */
     border-radius: 8px; /* Abgerundete Ecken */
 }
 
