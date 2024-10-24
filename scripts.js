@@ -12,12 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modal && registerButton && closeButton && loginButton && loginModal) {
         // Modal öffnen, wenn der Registrierungsbutton angeklickt wird
         registerButton.onclick = function() {
-            modal.style.display = 'block';
+            modal.style.display = 'flex'; // Flex verwenden, um das Modal korrekt darzustellen
         };
 
         // Modal öffnen, wenn der Login-Button angeklickt wird
         loginButton.onclick = function() {
-            loginModal.style.display = 'block'; // Login Modal anzeigen
+            loginModal.style.display = 'flex'; // Login Modal anzeigen
         };
 
         // Modal schließen, wenn das "x" angeklickt wird
@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
             modal.style.display = 'none';
         };
 
-        // Funktion zum Schließen des Login-Modals
-        const closeLoginModal = document.querySelector('.close-login'); // Schließen-Button für Login
+        // Schließen-Button für Login
+        const closeLoginModal = document.querySelector('.close-login');
         if (closeLoginModal) {
             closeLoginModal.onclick = function() {
                 loginModal.style.display = 'none';
@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Funktion für die Registrierung
 function registerUser() {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+    const email = document.getElementById('modalEmail').value; // Korrigierte ID für das E-Mail-Feld
+    const password = document.getElementById('modalPassword').value; // Korrigierte ID für das Passwort-Feld
 
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
@@ -65,8 +65,8 @@ function registerUser() {
 
 // Funktion für den Login
 function loginUser() {
-    const email = document.getElementById('loginEmail').value;
-    const password = document.getElementById('loginPassword').value;
+    const email = document.getElementById('loginEmail').value; // ID für das E-Mail-Feld im Login-Modal
+    const password = document.getElementById('loginPassword').value; // ID für das Passwort-Feld im Login-Modal
 
     signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
