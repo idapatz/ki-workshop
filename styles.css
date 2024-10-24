@@ -1,8 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #000; /* Hintergrundfarbe auf Schwarz geändert */
+    color: #fff; /* Textfarbe auf Weiß gesetzt */
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
 header {
@@ -12,12 +13,83 @@ header {
     text-align: center;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Zentrierung der Navigation */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Sanfter Übergang der Farbe */
+}
+
+nav ul li a:hover {
+    color: #39d353; /* Farbe bei Hover auf Grün ändern */
+}
+
+.landing {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.landing h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.landing p {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-green {
+    background-color: #39d353;
+    color: #000;
+}
+
+.btn-outline {
+    border: 2px solid #39d353;
+    color: #39d353;
+    background: none;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease; /* Sanfter Übergang der Opazität */
+}
+
 section {
     margin: 20px 0;
 }
 
 h2 {
-    color: #333;
+    color: #fff; /* Überschriftenfarbe auf Weiß gesetzt */
 }
 
 iframe {
@@ -28,4 +100,5 @@ iframe {
 footer {
     text-align: center;
     margin-top: 20px;
+    color: #fff; /* Textfarbe im Footer auf Weiß gesetzt */
 }
