@@ -37,12 +37,13 @@ nav ul li a:hover {
 }
 
 .landing {
-    text-align: left; /* Text linksbündig ausrichten */
+display: flex; /* Flexbox verwenden für die Anordnung von Text und Bild */
+    justify-content: space-between; /* Platz zwischen Text und Bild */
+    align-items: center; /* Vertikale Zentrierung */
     padding: 100px 20px;
     max-width: 800px; /* Begrenzung der Breite für bessere Lesbarkeit */
     margin: 0 auto; /* Zentriert den gesamten Container */
 }
-
 .landing h1, .landing p {
     margin: 0; /* Entfernt die Standardmargen */
 }
@@ -60,8 +61,7 @@ nav ul li a:hover {
 }
 
 .landing-image {
-    float: right; /* Bild nach rechts ausrichten */
-    width: 300px; /* Breite des Bildes anpassen */
+  width: 300px; /* Breite des Bildes anpassen */
     margin-left: 20px; /* Abstand zum Text */
     border-radius: 8px; /* Abgerundete Ecken */
 }
