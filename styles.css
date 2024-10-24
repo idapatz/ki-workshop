@@ -121,15 +121,47 @@ footer {
 }
 
 /* Modal Content */
+/* Modal Content */
 .modal-content {
     background-color: #fff;
-    margin: 10% auto; /* Positionierung des Modals etwas höher */
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 400px; /* Maximale Breite */
+    max-width: 400px;
     text-align: center;
-    border-radius: 8px; /* Abgerundete Ecken für das Modal */
+    border-radius: 8px;
+}
+
+/* Form Styling */
+.modal-content form {
+    display: flex;
+    flex-direction: column; /* Elemente untereinander anordnen */
+    gap: 15px; /* Abstand zwischen den Feldern */
+}
+
+.modal-content input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    width: 100%;
+    box-sizing: border-box; /* Verhindert Überlaufen */
+}
+
+.modal-content button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #39d353;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Button auf volle Breite */
+}
+
+.modal-content button:hover {
+    background-color: #2eae41; /* Etwas dunklere Farbe bei Hover */
 }
 
 /* Close Button */
