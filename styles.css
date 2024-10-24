@@ -44,6 +44,9 @@ nav ul li a:hover {
     max-width: 800px; /* Begrenzung der Breite für bessere Lesbarkeit */
     margin: 0 auto; /* Zentriert den gesamten Container */
 }
+.text-container {
+    max-width: 600px; /* Maximale Breite für den Text */
+}
 
 .landing h1, .landing p {
     margin: 0; /* Entfernt die Standardmargen */
