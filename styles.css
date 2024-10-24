@@ -4,10 +4,11 @@ body {
     color: #fff; /* Textfarbe auf Weiß gesetzt */
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     padding: 10px 0;
     text-align: center;
