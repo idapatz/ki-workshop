@@ -27,7 +27,7 @@
             in deinem Arbeitsumfeld ein – ohne Vorkenntnisse!
         </p>
         <div class="buttons">
-            <a href="#" class="btn btn-green" onclick="openModal()">Registrierung</a>
+            <a href="#register" class="btn btn-green" onclick="openModal()">Registrierung</a>
             <a href="#login" class="btn btn-outline">Login</a>
         </div>
     </section>
@@ -54,6 +54,7 @@
     <section id="quiz">
         <h2>Teste dein Wissen</h2>
         <p>Hier kannst du dein Wissen über KI mit einem Quiz testen.</p>
+        <!-- Hier kann später der JavaScript-Code für ein Quiz eingefügt werden -->
     </section>
     
     <footer>
@@ -68,6 +69,7 @@
         import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
         import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
 
+        // Your web app's Firebase configuration
         const firebaseConfig = {
             apiKey: "AIzaSyBvck5m_S1pUWykSNfCesJ0Eu6wYE1XgjM",
             authDomain: "ki-workshop-f800c.firebaseapp.com",
@@ -78,10 +80,12 @@
             measurementId: "G-PYJT9ZWQ41"
         };
 
+        // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
         const auth = getAuth(app);
 
+        // Funktion für die Registrierung
         function registerUser() {
             const email = document.getElementById('modalEmail').value;
             const password = document.getElementById('modalPassword').value;
@@ -110,7 +114,7 @@
         // Schließen des Modals, wenn außerhalb geklickt wird
         window.onclick = function(event) {
             const modal = document.getElementById('registerModal');
-            if (event.target == modal) {
+            if (event.target === modal) {
                 closeModal();
             }
         }
