@@ -31,7 +31,14 @@
             <a href="#login" class="btn btn-outline">Login</a>
         </div>
     </section>
-    
+    <section id="register">
+    <h2>Registrierung</h2>
+    <form onsubmit="registerUser(); return false;">
+        <input type="email" id="email" placeholder="E-Mail-Adresse" required />
+        <input type="password" id="password" placeholder="Passwort" required />
+        <button type="submit" class="btn btn-green">Registrieren</button>
+    </form>
+</section>
     <section id="videos">
         <h2>Videos zum Thema KI</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
@@ -49,5 +56,44 @@
     </footer>
     
     <script src="scripts.js"></script>
+   <!-- Firebase SDK und Initialisierung -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBvck5m_S1pUWykSNfCesJ0Eu6wYE1XgjM",
+            authDomain: "ki-workshop-f800c.firebaseapp.com",
+            projectId: "ki-workshop-f800c",
+            storageBucket: "ki-workshop-f800c.appspot.com",
+            messagingSenderId: "635249479399",
+            appId: "1:635249479399:web:cc707c3dd455fcd140dc42",
+            measurementId: "G-PYJT9ZWQ41"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth(app);
+
+        // Funktion für die Registrierung
+        function registerUser() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    alert('User registered successfully: ' + user.email);
+                })
+                .catch((error) => {
+                    const errorMessage = error.message;
+                    alert('Error: ' + errorMessage);
+                });
+        }
+    </script>
 </body>
 </html>
