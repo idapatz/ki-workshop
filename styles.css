@@ -93,9 +93,9 @@ nav ul li a:hover {
 }
 
 .btn-outline {
-    border: 2px solid #8fe009;
-    color: ##8fe009;
-    background: none;
+    border: 2px solid #8fe009; /* Rahmenfarbe in ein leuchtendes Grün ändern */
+    color: #8fe009; /* Textfarbe ebenfalls in ein leuchtendes Grün ändern */
+    background: none; /* Hintergrund transparent lassen */
 }
 
 .btn:hover {
