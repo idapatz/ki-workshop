@@ -68,8 +68,8 @@ nav ul li a:hover {
 }
 
 .landing-image {
-    width: auto; /* Breite des Bildes automatisch anpassen */
-    height: 100%; /* Höhe des Bildes auf 100% setzen, um die gesamte Text-Höhe zu erreichen */
+    width: auto; /* Breite automatisch anpassen */
+    height: 120%; /* Die Höhe des Bildes auf 120% der aktuellen Höhe setzen */
     max-height: calc(100% + 100px); /* Maximale Höhe anpassen, um Überschrift und Text zu berücksichtigen (60px ist ein Beispielwert, du kannst ihn anpassen) */
     border-radius: 8px; /* Abgerundete Ecken */
 }
