@@ -116,11 +116,11 @@ iframe {
 }
 
 .kurs-container {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 1200px; /* Breite der Kursinhalte */
+    display: flex;
+    flex-direction: row; /* Elemente horizontal anordnen */
+    flex-wrap: nowrap; /* Verhindert das Umwickeln der Elemente */
+    gap: 40px; /* Abstand zwischen den Modulen */
+    align-items: flex-start; /* Elemente oben ausrichten */
 }
 
 .kurs-container h1, .kurs-container h2, .kurs-container p {
