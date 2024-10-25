@@ -69,7 +69,7 @@ nav ul li a:hover {
 
 .landing-image {
     width: auto; /* Breite automatisch anpassen */
-    height: 200%; /* Die Höhe des Bildes auf 120% der aktuellen Höhe setzen */
+    height: 300%; /* Die Höhe des Bildes auf 120% der aktuellen Höhe setzen */
     border-radius: 8px; /* Abgerundete Ecken */
 }
 
