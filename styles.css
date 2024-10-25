@@ -39,9 +39,9 @@ nav ul li a:hover {
 .landing {
     display: flex; /* Flexbox verwenden für die Anordnung von Text und Bild */
     justify-content: space-between; /* Platz zwischen Text und Bild */
-    align-items: stretch; /* Vertikale Anpassung */
+    align-items: center; /* Zentrierung des Bildes auf gleicher Höhe wie der Text */
     padding: 100px 20px;
-    max-width: 800px; /* Begrenzung der Breite für bessere Lesbarkeit */
+    max-width: 1200px; /* Breite des Containers erhöhen, um mehr Platz zu schaffen */
     margin: 0 auto; /* Zentriert den gesamten Container */
 }
 
@@ -70,7 +70,7 @@ nav ul li a:hover {
 .landing-image {
     width: auto; /* Breite des Bildes automatisch anpassen */
     height: 100%; /* Höhe des Bildes auf 100% setzen, um die gesamte Text-Höhe zu erreichen */
-    max-height: calc(100% + 60px); /* Maximale Höhe anpassen, um Überschrift und Text zu berücksichtigen (60px ist ein Beispielwert, du kannst ihn anpassen) */
+    max-height: calc(100% + 100px); /* Maximale Höhe anpassen, um Überschrift und Text zu berücksichtigen (60px ist ein Beispielwert, du kannst ihn anpassen) */
     border-radius: 8px; /* Abgerundete Ecken */
 }
 
