@@ -33,7 +33,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #39d353; /* Farbe bei Hover auf Grün ändern */
+    color: #8fe009; /* Farbe bei Hover auf Grün ändern */
 }
 
 .landing {
@@ -88,13 +88,13 @@ nav ul li a:hover {
 }
 
 .btn-green {
-    background-color: #39d353;
+    background-color: #8fe009;
     color: #000;
 }
 
 .btn-outline {
-    border: 2px solid #39d353;
-    color: #39d353;
+    border: 2px solid #8fe009;
+    color: ##8fe009;
     background: none;
 }
 
@@ -189,7 +189,7 @@ footer {
 
 .close:hover,
 .close:focus {
-    color: #39d353; /* Grüne Farbe bei Hover */
+    color: #8fe009; /* Grüne Farbe bei Hover */
     text-decoration: none;
     cursor: pointer;
 }
