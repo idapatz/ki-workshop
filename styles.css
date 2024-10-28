@@ -69,7 +69,7 @@ nav ul li a:hover {
 
 .landing-image {
     width: auto; /* Breite automatisch anpassen */
-    height: 300%; /* Die Höhe des Bildes auf 120% der aktuellen Höhe setzen */
+    height: 300%; /* Die Höhe des Bildes auf 300% der aktuellen Höhe setzen */
     border-radius: 8px; /* Abgerundete Ecken */
 }
 
@@ -116,13 +116,29 @@ iframe {
 }
 
 .kurs-container {
-    display: block; /* Block-Layout verwenden für vertikale Anordnung */
-    gap: 20px; /* Abstand zwischen den Abschnitten für bessere Lesbarkeit */
+    display: flex; /* Flexbox verwenden, um Module in Kästchen darzustellen */
+    flex-wrap: wrap; /* Automatisches Umwickeln der Module, wenn Platz benötigt wird */
+    gap: 40px; /* Abstand zwischen den Modulen */
     margin: 20px; /* Abstand zum Rand hinzufügen */
+    justify-content: space-around; /* Zentriere die Kästchen in der Kursseite */
 }
 
-.kurs-container h1, .kurs-container h2, .kurs-container p {
-    text-align: left; /* Text linksbündig ausrichten */
+.kurs-box {
+    background-color: #111; /* Dunkles Grau für den Hintergrund des Kästchens */
+    border-radius: 10px; /* Abgerundete Ecken für den Kasten */
+    padding: 20px;
+    text-align: center; /* Zentriere den Text innerhalb des Kästchens */
+    width: 300px; /* Feste Breite für jedes Modul */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Sanfte Übergänge bei Hover */
+}
+
+.kurs-box:hover {
+    transform: scale(1.05); /* Leichtes Vergrößern bei Hover */
+    opacity: 0.9; /* Leichte Abnahme der Deckkraft bei Hover */
+}
+
+.kurs-container h1, .kurs-box h2, .kurs-box p {
+    text-align: center; /* Text zentrieren */
     margin-bottom: 20px; /* Abstand zwischen den Elementen */
 }
 
@@ -134,7 +150,6 @@ iframe {
 .kurs-container p {
     line-height: 1.6;
     font-size: 16px;
-
 }
 
 footer {
@@ -187,7 +202,7 @@ footer {
 .modal-content button {
     padding: 10px;
     font-size: 16px;
-    background-color: #39d353;
+    background-color: #8fe009;
     color: #000;
     border: none;
     border-radius: 5px;
@@ -196,7 +211,7 @@ footer {
 }
 
 .modal-content button:hover {
-    background-color: #8fe009; /* Etwas dunklere Farbe bei Hover */
+    background-color: #679519; /* Etwas dunklere Farbe bei Hover */
 }
 
 /* Close Button */
