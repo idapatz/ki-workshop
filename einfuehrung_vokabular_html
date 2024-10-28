@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einführung - Vokabular</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="kurs.html">Kurs</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="vokabular">
+        <h1>Vokabular der Künstlichen Intelligenz</h1>
+        <p>In diesem Abschnitt wirst du die wichtigsten Begriffe der Künstlichen Intelligenz kennenlernen, die dir im Laufe dieses Workshops begegnen werden. Verstehe die grundlegenden Konzepte, um die Inhalte bestmöglich zu erfassen.</p>
+
+        <h2>Wichtige Begriffe:</h2>
+        <ul>
+            <li><strong>Künstliche Intelligenz (KI):</strong> Ein Teilbereich der Informatik, der sich mit der Entwicklung von Maschinen beschäftigt, die menschenähnliche Intelligenzleistungen erbringen können.</li>
+            <li><strong>Maschinelles Lernen (ML):</strong> Ein Ansatz der KI, bei dem Maschinen aus Daten lernen, um Muster zu erkennen und Entscheidungen zu treffen.</li>
+            <li><strong>Neuronales Netzwerk:</strong> Eine Rechenstruktur, die vom menschlichen Gehirn inspiriert ist und zur Mustererkennung verwendet wird.</li>
+            <li><strong>Algorithmus:</strong> Eine Reihe von Regeln oder Schritten, die eine Maschine befolgt, um ein Problem zu lösen.</li>
+            <li><strong>Deep Learning:</strong> Eine spezielle Methode des maschinellen Lernens, die auf tiefen neuronalen Netzwerken basiert und zur Analyse komplexer Daten verwendet wird.</li>
+            <li><strong>Training:</strong> Der Prozess, bei dem ein Modell mithilfe von Daten verbessert wird, um bestimmte Aufgaben zu erfüllen.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ida Patzelt</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einführung - Vokabular</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="kurs.html">Kurs</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="vokabular">
+        <h1>Vokabular der Künstlichen Intelligenz</h1>
+        <p>In diesem Abschnitt wirst du die wichtigsten Begriffe der Künstlichen Intelligenz kennenlernen, die dir im Laufe dieses Workshops begegnen werden. Verstehe die grundlegenden Konzepte, um die Inhalte bestmöglich zu erfassen.</p>
+
+        <h2>Wichtige Begriffe:</h2>
+        <ul>
+            <li><strong>Künstliche Intelligenz (KI):</strong> Ein Teilbereich der Informatik, der sich mit der Entwicklung von Maschinen beschäftigt, die menschenähnliche Intelligenzleistungen erbringen können.</li>
+            <li><strong>Maschinelles Lernen (ML):</strong> Ein Ansatz der KI, bei dem Maschinen aus Daten lernen, um Muster zu erkennen und Entscheidungen zu treffen.</li>
+            <li><strong>Neuronales Netzwerk:</strong> Eine Rechenstruktur, die vom menschlichen Gehirn inspiriert ist und zur Mustererkennung verwendet wird.</li>
+            <li><strong>Algorithmus:</strong> Eine Reihe von Regeln oder Schritten, die eine Maschine befolgt, um ein Problem zu lösen.</li>
+            <li><strong>Deep Learning:</strong> Eine spezielle Methode des maschinellen Lernens, die auf tiefen neuronalen Netzwerken basiert und zur Analyse komplexer Daten verwendet wird.</li>
+            <li><strong>Training:</strong> Der Prozess, bei dem ein Modell mithilfe von Daten verbessert wird, um bestimmte Aufgaben zu erfüllen.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ida Patzelt</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
