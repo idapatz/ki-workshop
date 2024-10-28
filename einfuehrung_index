@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einführung - KI-Workshop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="kurs.html">Kurs</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="einfuehrung">
+        <h1>Einfuehrung</h1>
+        <p>Willkommen zum KI-Workshop! In diesem Einführungskapitel erfährst du, was Künstliche Intelligenz (KI) ist und wie sie in verschiedenen Bereichen angewendet wird. Dieses Kapitel soll dir grundlegendes Wissen und wichtige Begriffe vermitteln, damit du bestens für die weiteren Themen gewappnet bist.</p>
+
+        <h2>Kapitelübersicht:</h2>
+        <ul>
+            <li><a href="einfuehrung_vokabular.html">1.1 Vokabular</a> - Lerne die wichtigsten Begriffe der Künstlichen Intelligenz kennen.</li>
+            <li><a href="einfuehrung_prompt.html">1.2 Was ist ein Prompt?</a> - Erfahre, was ein Prompt ist und welche Rolle er in der KI spielt.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ida Patzelt</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
