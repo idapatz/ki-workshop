@@ -43,7 +43,7 @@
     <section class="kontakt">
         <h1>Kontakt</h1> <!-- Überschrift des Kontaktbereichs -->
         <p>Du hast Fragen oder Anmerkungen? Nimm gerne Kontakt mit mir auf!</p> <!-- Beschreibung des Kontaktbereichs -->
-        <form action="#" method="post"> <!-- Formular zum Versenden einer Nachricht -->
+        <form action="https://formspree.io/f/xqakeggd" method="post"> <!-- Formular zum Versenden einer Nachricht -->
             <div class="form-group">
                 <label for="name">Name:</label> <!-- Label für das Namensfeld -->
                 <input type="text" id="name" name="name" required> <!-- Eingabefeld für den Namen, Pflichtfeld -->
@@ -56,7 +56,8 @@
                 <label for="message">Nachricht:</label> <!-- Label für den Nachrichtenbereich -->
                 <textarea id="message" name="message" rows="5" required></textarea> <!-- Textbereich für die Nachricht, Pflichtfeld -->
             </div>
-            <button type="submit" class="btn btn-green">Nachricht senden</button> <!-- Button zum Absenden der Nachricht -->
+            <button type="submit" class="btn btn-green">Nachricht senden</button>
+<input type="hidden" name="_subject" value="Neue Kontaktanfrage"> <!-- Button zum Absenden der Nachricht -->
         </form>
     </section>
 
