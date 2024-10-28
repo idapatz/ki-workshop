@@ -45,8 +45,12 @@
         <p>Du hast Fragen oder Anmerkungen? Nimm gerne Kontakt mit mir auf!</p> <!-- Beschreibung des Kontaktbereichs -->
         <form action="https://formspree.io/f/xqakeggd" method="post"> <!-- Formular zum Versenden einer Nachricht -->
             <div class="form-group">
-                <label for="name">Name:</label> <!-- Label für das Namensfeld -->
-                <input type="text" id="name" name="name" required> <!-- Eingabefeld für den Namen, Pflichtfeld -->
+                <label for="name">Vorname:</label> <!-- Label für das Namensfeld -->
+                <input type="text" id="name" name="Vorname" required> <!-- Eingabefeld für den Vornamen, Pflichtfeld -->
+            </div>
+            <div class="form-group">
+                <label for="nachname">Nachname:</label> <!-- Label für das Nachnamenfeld -->
+                <input type="text" id="nachname" name="Nachname" required> <!-- Eingabefeld für den Nachnamen, Pflichtfeld -->
             </div>
             <div class="form-group">
                 <label for="email">E-Mail:</label> <!-- Label für das E-Mail-Feld -->
@@ -57,7 +61,7 @@
                 <textarea id="message" name="message" rows="5" required></textarea> <!-- Textbereich für die Nachricht, Pflichtfeld -->
             </div>
             <button type="submit" class="btn btn-green">Nachricht senden</button>
-<input type="hidden" name="_subject" value="Neue Kontaktanfrage"> <!-- Button zum Absenden der Nachricht -->
+            <input type="hidden" name="_subject" value="Neue Kontaktanfrage"> <!-- Verstecktes Feld zum Setzen des Betreffs -->
         </form>
     </section>
 
