@@ -114,27 +114,7 @@ iframe {
     max-width: 100%;
     height: auto;
 }
-/* Kurs Menü/
-
-/* Neuer CSS-Code für das rechte Menü */
-.content-container {
-    display: flex; /* Flexbox für horizontale Anordnung */
-    flex-direction: row; /* Inhalte nebeneinander platzieren */
-    align-items: flex-start; /* Oben ausrichten */
-}
-
-/* Hauptinhalt */
-#main-content {
-    flex: 3; /* Hauptinhalt nimmt mehr Platz ein */
-    padding: 20px;
-}
-
-/* Rechtes Menü */
-.side-menu {
-    background-color: #333; /* Dunkelgrauer Hintergrund */
-    padding: 20px; /* Innenabstand */
-    border-radius: 10px; /* Abgerundete Ecken */
-}
+/* Kurs Menü */
 
 .side-menu a {
     color: #fff; /* Weißer Text für Links */
