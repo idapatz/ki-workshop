@@ -145,7 +145,40 @@ iframe {
 .kurs-container h2 {
     font-size: 28px; /* Größe der Unterüberschriften */
     margin-top: 40px; /* Abstand oberhalb der Module */
+.side-menu {
+    flex: 1;
+    padding: 20px;
+    background-color: #222; /* Dunkler Hintergrund für Kontrast */
+    color: #fff;
+    position: sticky;
+    top: 0; /* Fixiert das Menü beim Scrollen */
+    height: 100vh; /* Volle Höhe */
+    overflow-y: auto;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
 }
+
+.side-menu h3 {
+    margin-top: 0;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    margin-bottom: 10px;
+}
+
+.side-menu ul li a {
+    color: #0f0; /* Grüner Link für bessere Sichtbarkeit */
+    text-decoration: none;
+}
+
+.side-menu ul li a:hover {
+    text-decoration: underline;
+}
+
 
 .kurs-container p {
     line-height: 1.6;
