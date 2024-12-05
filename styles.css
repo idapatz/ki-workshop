@@ -167,6 +167,45 @@ iframe {
 .side-menu ul li a:hover {
     color: #fff; /* Weiß bei Hover */
 }
+
+/* Kurs Einführungs Tesxt/
+
+/* Einführung Box */
+.intro-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.intro-box {
+    background-color: #111; /* Dunkler Hintergrund */
+    color: #fff; /* Weißer Text */
+    padding: 20px;
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Schatten für Tiefe */
+    line-height: 1.6; /* Angenehme Textlesbarkeit */
+}
+
+.intro-box h2 {
+    color: #8fe009; /* Grüne Überschrift */
+    margin-bottom: 15px;
+}
+
+.intro-box p {
+    margin: 10px 0;
+}
+
+.intro-box ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.intro-box ul li {
+    margin: 5px 0;
+    list-style-type: disc; /* Aufzählungspunkte */
+    color: #8fe009; /* Grün für Liste */
+}
+
 /* Ende Kurs-Seite/ 
 footer {
     text-align: center;
