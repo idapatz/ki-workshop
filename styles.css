@@ -146,6 +146,7 @@ iframe {
 /* Kurs Einführungs Tesxt/
 
 /* Einführung Box */
+/* Einführung Box */
 .intro-section {
     max-width: 800px;
     margin: 50px auto;
@@ -153,7 +154,7 @@ iframe {
 }
 
 .intro-box {
-    background-color: #111; /* Dunkler Hintergrund */
+    background-color: #2a282e; /* Neuer Hintergrund */
     color: #fff; /* Weißer Text */
     padding: 20px;
     border-radius: 10px; /* Abgerundete Ecken */
@@ -180,6 +181,7 @@ iframe {
     list-style-type: disc; /* Aufzählungspunkte */
     color: #8fe009; /* Grün für Liste */
 }
+
 
 /* Ende Kurs-Seite/ */ 
 footer {
