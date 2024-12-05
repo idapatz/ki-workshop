@@ -137,6 +137,7 @@ iframe {
     color: #fff; /* Textfarbe auf Weiß */
     position: sticky; /* Menü bleibt sichtbar beim Scrollen */
     top: 0; /* Fixierung an der oberen Seite */
+  
     height: 100vh; /* Volle Höhe des Viewports */
     overflow-y: auto; /* Scrollen ermöglichen, falls nötig */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Schatten für Tiefe */
@@ -151,6 +152,7 @@ iframe {
 .side-menu ul {
     list-style: none; /* Entfernt Standard-Punkte */
     padding: 0;
+    margin: 0;
 }
 
 .side-menu ul li {
@@ -159,14 +161,17 @@ iframe {
 
 .side-menu ul li a {
     color: #8fe009; /* Grün passend zur Website */
-    text-decoration: none;
+    text-decoration: none; /* Unterstreichung entfernen */
     font-weight: bold;
-    transition: color 0.3s ease; /* Sanfter Übergang */
+     display: block; /* Block-Layout für volle Klickfläche */
+    padding: 10px 15px;
+    transition: background 0.3s ease, color 0.3s ease; /* Sanfter Übergang */
 }
 
+/* Hover-Effekt für Hauptmenü */
 .side-menu ul li a:hover {
     background-color: #444; /* Dunkleres Grau bei Hover */
-    color: #fff; /* Weiß bei Hover */
+    color: #fff; /* Weißer Text bei Hover */
 }
 
 /* Submenü-Stil */
@@ -182,11 +187,14 @@ iframe {
     padding: 8px 30px; /* Einrückung für Unterkapitel */
     font-size: 14px; /* Kleinere Schriftgröße */
     color: #8fe009; /* Grün für Unterkapitel */
+    text-decoration: none;
+    display: block;
 }
 
+/* Hover-Effekt für Submenü-Links */
 .side-menu ul .submenu li a:hover {
-    background-color: #444;
-    color: #fff; /* Weiß bei Hover */
+    background-color: #444; /* Dunklerer Hintergrund bei Hover */
+    color: #fff; /* Weißer Text bei Hover */
 }
 
 /* Hover-Effekt: Zeige Submenü */
