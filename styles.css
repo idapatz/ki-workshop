@@ -165,7 +165,33 @@ iframe {
 }
 
 .side-menu ul li a:hover {
+    background-color: #444; /* Dunkleres Grau bei Hover */
     color: #fff; /* Weiß bei Hover */
+}
+
+/* Submenü-Stil */
+.side-menu ul .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Standardmäßig unsichtbar */
+    background-color: #333; /* Abgesetzter Hintergrund */
+}
+
+.side-menu ul .submenu li a {
+    padding: 8px 30px; /* Einrückung für Unterkapitel */
+    font-size: 14px; /* Kleinere Schriftgröße */
+    color: #8fe009; /* Grün für Unterkapitel */
+}
+
+.side-menu ul .submenu li a:hover {
+    background-color: #444;
+    color: #fff; /* Weiß bei Hover */
+}
+
+/* Hover-Effekt: Zeige Submenü */
+.side-menu ul li:hover .submenu {
+    display: block; /* Submenü sichtbar machen */
 }
 
 /* Kurs Einführungs Tesxt/
