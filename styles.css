@@ -131,75 +131,25 @@ iframe {
 
 /* Rechtes Menü */
 .side-menu {
-    flex: 1; /* Menü nimmt weniger Platz ein */
-    padding: 20px;
-    background-color: #111; /* Hintergrundfarbe anpassen */
-    color: #fff; /* Textfarbe auf Weiß */
-    position: sticky; /* Menü bleibt sichtbar beim Scrollen */
-    top: 0; /* Fixierung an der oberen Seite */
-  
-    height: 100vh; /* Volle Höhe des Viewports */
-    overflow-y: auto; /* Scrollen ermöglichen, falls nötig */
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Schatten für Tiefe */
+    background-color: #333; /* Dunkelgrauer Hintergrund */
+    padding: 20px; /* Innenabstand */
+    border-radius: 10px; /* Abgerundete Ecken */
 }
 
-.side-menu h3 {
-    color: #8fe009; /* Grün passend zur restlichen Website */
-    font-size: 20px;
-    margin-bottom: 20px;
+.side-menu a {
+    color: #fff; /* Weißer Text für Links */
+    text-decoration: none; /* Keine Unterstreichung */
+    display: block; /* Blockanzeige, damit der gesamte Link klickbar ist */
+    margin-bottom: 10px; /* Abstand zwischen Links */
 }
 
-.side-menu ul {
-    list-style: none; /* Entfernt Standard-Punkte */
-    padding: 0;
-    margin: 0;
+.side-menu a:hover {
+    text-decoration: underline; /* Unterstreichung beim Hover */
 }
 
-.side-menu ul li {
-    margin-bottom: 15px;
-}
-
-.side-menu ul li a {
-    color: #8fe009; /* Grün passend zur Website */
-    text-decoration: none; /* Unterstreichung entfernen */
-    font-weight: bold;
-     display: block; /* Block-Layout für volle Klickfläche */
-    padding: 10px 15px;
-    transition: background 0.3s ease, color 0.3s ease; /* Sanfter Übergang */
-}
-
-/* Hover-Effekt für Hauptmenü */
-.side-menu ul li a:hover {
-    background-color: #444; /* Dunkleres Grau bei Hover */
-    color: #fff; /* Weißer Text bei Hover */
-}
-
-/* Submenü-Stil */
-.side-menu ul .submenu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none; /* Standardmäßig unsichtbar */
-    background-color: #333; /* Abgesetzter Hintergrund */
-}
-
-.side-menu ul .submenu li a {
-    padding: 8px 30px; /* Einrückung für Unterkapitel */
-    font-size: 14px; /* Kleinere Schriftgröße */
-    color: #8fe009; /* Grün für Unterkapitel */
-    text-decoration: none;
-    display: block;
-}
-
-/* Hover-Effekt für Submenü-Links */
-.side-menu ul .submenu li a:hover {
-    background-color: #444; /* Dunklerer Hintergrund bei Hover */
-    color: #fff; /* Weißer Text bei Hover */
-}
-
-/* Hover-Effekt: Zeige Submenü */
-.side-menu ul li:hover .submenu {
-    display: block; /* Submenü sichtbar machen */
+.side-menu p {
+    color: #fff; /* Weißer Text für normale Absätze */
+    margin: 0 0 10px 0; /* Abstand nach unten für Absätze */
 }
 
 /* Kurs Einführungs Tesxt/
