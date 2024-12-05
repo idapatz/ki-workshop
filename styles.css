@@ -116,6 +116,16 @@ iframe {
 }
 /* Kurs Menü */
 
+.side-menu {
+    background-color: #333; /* Dunkelgrauer Hintergrund */
+    padding: 20px; /* Innenabstand */
+    border-radius: 10px; /* Abgerundete Ecken */
+    position: fixed; /* Fixierte Position */
+    right: 0; /* Immer rechts ausgerichtet */
+    top: 0; /* Von oben starten */
+    height: 100%; /* Volle Höhe des Bildschirms */
+}
+
 .side-menu a {
     color: #fff; /* Weißer Text für Links */
     text-decoration: none; /* Keine Unterstreichung */
@@ -131,6 +141,7 @@ iframe {
     color: #fff; /* Weißer Text für normale Absätze */
     margin: 0 0 10px 0; /* Abstand nach unten für Absätze */
 }
+
 
 /* Kurs Einführungs Tesxt/
 
