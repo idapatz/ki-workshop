@@ -79,3 +79,31 @@ function loginUser() {
             alert('Fehler: ' + errorMessage);
         });
 }
+
+//Funktion für Kurs Feedback
+
+document.getElementById('submit-btn').addEventListener('click', function () {
+  const selectedOption = document.querySelector('input[name="definition"]:checked');
+  const feedback = document.getElementById('feedback');
+
+  if (selectedOption) {
+    if (selectedOption.value === 'correct') {
+      feedback.textContent = '🎉 Richtig! Gut gemacht!';
+      feedback.style.color = 'green';
+    } else {
+      feedback.textContent = '❌ Falsch. Bitte versuche es erneut.';
+      feedback.style.color = 'red';
+    }
+    feedback.classList.remove('hidden');
+  } else {
+    alert('Bitte wähle eine Option aus!');
+  }
+});
+
+document.getElementById('back-btn').addEventListener('click', function () {
+  alert('Zur vorherigen Seite navigieren');
+});
+
+document.getElementById('continue-btn').addEventListener('click', function () {
+  alert('Zur nächsten Seite navigieren');
+});
