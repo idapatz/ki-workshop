@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KI-Workshop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Hier den Link zur Landingpage -->
+                <li><a href="about.html">About</a></li> <!-- Hier den Link zur About-Page -->
+                <li><a href="kurs.html">Kurs</a></li> <!-- Link zum Kurs -->
+                <li><a href="kontakt.html">Kontakt</a></li> <!-- Link zur Kontakt-Seite -->
+            </ul>
+        </nav>
+    </header>
+<div class="progress-container">
+    <div class="progress-bar">
+        <div class="progress-step active"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+    </div>
+</div>
+
+<main class="quiz-container">
+    <!-- Frage 1 -->
+    <div class="question" id="question-1">
+        <p class="quiz-instruction">Lies die Definitionen und wähle die richtige aus:</p>
+        <form>
+            <label>
+                <input type="radio" name="definition" value="correct">
+                Ein Team besteht aus voneinander abhängigen Mitgliedern, die an einem gemeinsamen Ziel arbeiten.
+            </label>
+            <label>
+                <input type="radio" name="definition" value="wrong">
+                Ein Team besteht aus voneinander abhängigen Mitgliedern, die an einer gemeinsamen Aufgabe arbeiten.
+            </label>
+        </form>
+    </div>
+
+    <!-- Frage 2 -->
+    <div class="question" id="question-2" style="display: none;">
+        <p class="quiz-instruction">Was ist eine Arbeitsgruppe?</p>
+        <form>
+            <label>
+                <input type="radio" name="definition" value="correct">
+                Eine Gruppe, die unabhängig voneinander arbeitet.
+            </label>
+            <label>
+                <input type="radio" name="definition" value="wrong">
+                Eine Gruppe mit gemeinsamen Zielen und abhängigen Aufgaben.
+            </label>
+        </form>
+    </div>
+</main>
+
+<footer class="quiz-footer">
+    <button id="back-btn" class="quiz-nav-btn">← Zurück</button>
+    <button id="continue-btn" class="quiz-nav-btn">Weiter →</button>
+</footer>
+
+</footer>
