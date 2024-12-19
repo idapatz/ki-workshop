@@ -1,8 +1,41 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('JavaScript geladen');
-    // Hier kann später der Code für das Quiz hinzugefügt werden
+    // Progress-Anzeige initialisieren
+    const steps = document.querySelectorAll('.progress-step');
+    const nextButton = document.getElementById('continue-btn');
+    const backButton = document.getElementById('back-btn');
+    let currentStep = 0;
 
-    // Modal-Elemente auswählen
+    // Progress-Anzeige: "Weiter"-Button
+    if (nextButton && steps) {
+        nextButton.addEventListener('click', () => {
+            if (currentStep < steps.length - 1) {
+                steps[currentStep].classList.add('active'); // Aktuellen Schritt markieren
+                currentStep++;
+                steps[currentStep].classList.add('active'); // Nächsten Schritt aktivieren
+                console.log(`Fortschritt: Schritt ${currentStep + 1} von ${steps.length}`);
+                
+                // Weiterleitung zur nächsten Frage (z. B. Frage2.html)
+                window.location.href = `Frage${currentStep + 1}.html`;
+            }
+        });
+    }
+
+    // Progress-Anzeige: "Zurück"-Button
+    if (backButton && steps) {
+        backButton.addEventListener('click', () => {
+            if (currentStep > 0) {
+                steps[currentStep].classList.remove('active'); // Aktuellen Schritt deaktivieren
+                currentStep--;
+                console.log(`Fortschritt: Schritt ${currentStep + 1} von ${steps.length}`);
+                
+                // Zur vorherigen Frage (z. B. Frage1.html)
+                window.location.href = `Frage${currentStep + 1}.html`;
+            }
+        });
+    }
+
+    // Modal-Elemente initialisieren
     const modal = document.getElementById('registerModal');
     const loginModal = document.getElementById('loginModal'); // Neuen Modal für Login hinzufügen
     const registerButton = document.querySelector('.btn-green');
@@ -80,30 +113,21 @@ function loginUser() {
         });
 }
 
-//Funktion für Kurs Feedback
-
+// Funktion für Kurs Feedback
 document.getElementById('submit-btn').addEventListener('click', function () {
-  const selectedOption = document.querySelector('input[name="definition"]:checked');
-  const feedback = document.getElementById('feedback');
+    const selectedOption = document.querySelector('input[name="definition"]:checked');
+    const feedback = document.getElementById('feedback');
 
-  if (selectedOption) {
-    if (selectedOption.value === 'correct') {
-      feedback.textContent = '🎉 Richtig! Gut gemacht!';
-      feedback.style.color = 'green';
+    if (selectedOption) {
+        if (selectedOption.value === 'correct') {
+            feedback.textContent = '🎉 Richtig! Gut gemacht!';
+            feedback.style.color = 'green';
+        } else {
+            feedback.textContent = '❌ Falsch. Bitte versuche es erneut.';
+            feedback.style.color = 'red';
+        }
+        feedback.classList.remove('hidden');
     } else {
-      feedback.textContent = '❌ Falsch. Bitte versuche es erneut.';
-      feedback.style.color = 'red';
+        alert('Bitte wähle eine Option aus!');
     }
-    feedback.classList.remove('hidden');
-  } else {
-    alert('Bitte wähle eine Option aus!');
-  }
-});
-
-document.getElementById('back-btn').addEventListener('click', function () {
-  alert('Zur vorherigen Seite navigieren');
-});
-
-document.getElementById('continue-btn').addEventListener('click', function () {
-  alert('Zur nächsten Seite navigieren');
 });
