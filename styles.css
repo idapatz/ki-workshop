@@ -285,6 +285,10 @@ iframe {
   background-color: #3700b3;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Ende Kurs-Seite/ */ 
 footer {
     text-align: center;
