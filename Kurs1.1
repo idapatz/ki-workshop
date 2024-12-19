@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KI-Workshop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Hier den Link zur Landingpage -->
+                <li><a href="about.html">About</a></li> <!-- Hier den Link zur About-Page -->
+                <li><a href="kurs.html">Kurs</a></li> <!-- Link zum Kurs -->
+                <li><a href="kontakt.html">Kontakt</a></li> <!-- Link zur Kontakt-Seite -->
+            </ul>
+        </nav>
+    </header>
+<main class="quiz-container">
+  <p class="quiz-instruction">
+    Lass uns zunächst die Definition eines Teams ansehen. Lies die Definitionen und wähle die richtige aus:
+  </p>
+  <form id="quiz-form">
+    <label class="quiz-option">
+      <input type="radio" name="definition" value="correct">
+      Ein Team besteht aus voneinander abhängigen Mitgliedern, die an einem gemeinsamen Ziel arbeiten. Ein Team unterscheidet sich von einer Arbeitsgruppe oder Koalition, die typischerweise aus mehr Mitgliedern besteht, deren Arbeit nicht voneinander abhängig ist.
+    </label>
+    <label class="quiz-option">
+      <input type="radio" name="definition" value="wrong">
+      Ein Team besteht aus voneinander abhängigen Mitgliedern, die an einer gemeinsamen Aufgabe arbeiten. Ein Team unterscheidet sich von einer Arbeitsgruppe oder Koalition, die typischerweise aus weniger Mitgliedern besteht, deren Arbeit nicht voneinander abhängig ist.
+    </label>
+    <button type="button" id="submit-btn" class="quiz-button">Bestätigen</button>
+  </form>
+  <p id="feedback" class="quiz-feedback hidden"></p>
+</main>
+<footer class="quiz-footer">
+  <button id="back-btn" class="quiz-nav-btn">← Zurück</button>
+  <button id="continue-btn" class="quiz-nav-btn">Weiter →</button>
+</footer>
+
