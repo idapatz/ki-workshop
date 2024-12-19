@@ -141,7 +141,24 @@ iframe {
     color: #fff; /* Weißer Text für normale Absätze */
     margin: 0 0 10px 0; /* Abstand nach unten für Absätze */
 }
+/* Unterkapitel */
+.sub-menu {
+    display: none; /* Unterkapitel standardmäßig verstecken */
+    margin-left: 15px; /* Einrückung für Unterkapitel */
+}
 
+.side-menu li:hover .sub-menu {
+    display: block; /* Unterkapitel anzeigen, wenn über das Hauptkapitel gehovt wird */
+}
+
+.sub-menu a {
+    color: #ddd; /* Hellgrauer Text für Unterkapitel-Links */
+    font-size: 0.9em; /* Kleinere Schriftgröße für Unterkapitel */
+}
+
+.sub-menu a:hover {
+    color: #fff; /* Weißer Text beim Hover für Unterkapitel */
+}
 
 /* Kurs Einführungs Tesxt/
 
