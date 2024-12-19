@@ -199,6 +199,63 @@ iframe {
     color: #8fe009; /* Grün für Liste */
 }
 
+/* Kurs-Inhalt/ */ 
+.quiz-container {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.quiz-instruction {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.quiz-option {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #555;
+}
+
+.quiz-button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz-button:hover {
+  background-color: #3700b3;
+}
+
+.quiz-feedback {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.quiz-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.quiz-nav-btn {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz-nav-btn:hover {
+  background-color: #3700b3;
+}
+
+
 
 /* Ende Kurs-Seite/ */ 
 footer {
