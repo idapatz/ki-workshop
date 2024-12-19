@@ -1,39 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('JavaScript geladen');
-    // Progress-Anzeige initialisieren
-    const steps = document.querySelectorAll('.progress-step');
+    const questions = document.querySelectorAll('.question'); // Alle Fragen finden
     const nextButton = document.getElementById('continue-btn');
     const backButton = document.getElementById('back-btn');
-    let currentStep = 0;
+    let currentQuestion = 0; // Start bei der ersten Frage
 
-    // Progress-Anzeige: "Weiter"-Button
-    if (nextButton && steps) {
-        nextButton.addEventListener('click', () => {
-            if (currentStep < steps.length - 1) {
-                steps[currentStep].classList.add('active'); // Aktuellen Schritt markieren
-                currentStep++;
-                steps[currentStep].classList.add('active'); // Nächsten Schritt aktivieren
-                console.log(`Fortschritt: Schritt ${currentStep + 1} von ${steps.length}`);
-                
-                // Weiterleitung zur nächsten Frage (z. B. Frage2.html)
-                window.location.href = `Frage${currentStep + 1}.html`;
-            }
+    // Funktion, um die aktuelle Frage anzuzeigen
+    function showQuestion(index) {
+        questions.forEach((q, i) => {
+            q.style.display = i === index ? 'block' : 'none'; // Nur die aktuelle Frage anzeigen
         });
     }
 
-    // Progress-Anzeige: "Zurück"-Button
-    if (backButton && steps) {
-        backButton.addEventListener('click', () => {
-            if (currentStep > 0) {
-                steps[currentStep].classList.remove('active'); // Aktuellen Schritt deaktivieren
-                currentStep--;
-                console.log(`Fortschritt: Schritt ${currentStep + 1} von ${steps.length}`);
-                
-                // Zur vorherigen Frage (z. B. Frage1.html)
-                window.location.href = `Frage${currentStep + 1}.html`;
-            }
-        });
-    }
+    // "Weiter"-Button
+    nextButton.addEventListener('click', () => {
+        if (currentQuestion < questions.length - 1) {
+            currentQuestion++;
+            showQuestion(currentQuestion);
+        }
+    });
+
+    // "Zurück"-Button
+    backButton.addEventListener('click', () => {
+        if (currentQuestion > 0) {
+            currentQuestion--;
+            showQuestion(currentQuestion);
+        }
+    });
+
+    // Zeige die erste Frage
+    showQuestion(currentQuestion);
+});
 
     // Modal-Elemente initialisieren
     const modal = document.getElementById('registerModal');
