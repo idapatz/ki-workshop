@@ -218,7 +218,7 @@ ul.divide-y {
 
 /* Stil für einzelne Listenelemente */
 ul.divide-y li {
-    background-color: #3a3a3a; /* Etwas hellerer Kasten für Kontrast */
+    background-color: #afafaf; /* Etwas hellerer Kasten für Kontrast */
     margin-bottom: 20px; /* Mehr Abstand zwischen Milestones */
     padding: 20px; /* Mehr Innenabstand für Text */
     border-radius: 10px; /* Abgerundete Ecken */
