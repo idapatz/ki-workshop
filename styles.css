@@ -218,11 +218,11 @@ ul.divide-y {
 
 /* Stil für einzelne Listenelemente */
 ul.divide-y li {
-    background-color: #afafaf; /* Etwas hellerer Kasten für Kontrast */
+    background-color: #575555; /* Etwas hellerer Kasten für Kontrast */
     margin-bottom: 20px; /* Mehr Abstand zwischen Milestones */
     padding: 20px; /* Mehr Innenabstand für Text */
     border-radius: 10px; /* Abgerundete Ecken */
-    border-bottom: 1px solid #555; /* Trennlinie */
+    border-bottom: 1px solid #ffffff; /* Trennlinie */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
     display: flex;
     justify-content: space-between;
