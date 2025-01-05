@@ -1,0 +1,50 @@
+<section class="overflow-hidden rounded-2xl border border-neutral-200 bg-white" data-testid="milestones-section" aria-label="Milestones section">
+    <header class="border-b border-neutral-200 p-6" data-testid="milestones-section-header">
+        <h5 class="tracking-normal supports-[overflow-wrap:anywhere]:[overflow-wrap:anywhere] text-lg text-text-neutral-heading font-semibold" data-testid="milestones-section-title">Milestones</h5>
+    </header>
+    <ul class="divide-y divide-neutral-200" data-testid="milestones-list" aria-label="List of milestones">
+        <li aria-label="Milestone 1: Kick Off Live Session - Build your Dream Team ">
+            <div role="button" data-testid="milestone-card-item" class="grid grid-cols-4 justify-between hover:cursor-pointer">
+                <div class="text-text-neutral-body justify-between gap-3 p-6 align-middle col-span-3 grid pt-6">
+                    <div class="flex flex-row items-center gap-1 whitespace-nowrap font-semibold uppercase">
+                        <p class="supports-[overflow-wrap:anywhere]:[overflow-wrap:anywhere] text-sm font-body font-normal tracking-[-0.07px] text-text-neutral-accent" data-testid="milestone-card-item-title">Milestone 1</p>
+                    </div>
+                    <h6 class="tracking-normal supports-[overflow-wrap:anywhere]:[overflow-wrap:anywhere] text-base text-text-neutral-heading font-bold" data-testid="milestone-card-item-name">Kick Off Live Session - Build your Dream Team </h6>
+                    <div class="flex flex-row gap-2">
+                        <div class="text-text-neutral-accent bg-background-neutral-subtler flex items-center whitespace-nowrap rounded-full px-3 text-xs font-bold w-fit py-0">
+                            <div class="mr-2">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4">
+                                    <path d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z"></path>
+                                </svg>
+                            </div>
+                            Due: Apr 16, 2024
+                        </div>
+                        <div class="flex items-center whitespace-nowrap rounded-full px-3 py-1 text-xs font-bold w-fit text-center bg-background-brand-subtle text-text-action-primary-enabled">
+                            <div class="mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                                    <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path>
+                                </svg>
+                            </div>
+                            Confirmed
+                        </div>
+                    </div>
+                </div>
+                <div class="text-text-neutral-body gap-3 p-6 align-middle col-span-1 grid justify-end self-center pt-6">
+                    <div data-testid="progress-indicator" class="relative flex size-10 items-center justify-center overflow-hidden rounded-full">
+                        <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" aria-label="Progress" aria-valuetext="100%" class="relative size-6 text-2xl font-semibold bg-primary-500 text-white">
+                            <svg fill="none" class="size-full" stroke-width="2" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" stroke-width="3" stroke-dashoffset="0" stroke-linecap="round" stroke-linejoin="round" class="opacity-100" style="stroke: currentcolor; --stroke-percent: 100;"></circle>
+                            </svg>
+                            <span data-current-value="100" class="absolute inset-0 m-auto size-fit">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" data-testid="progress-indicator-check-icon" class="text-white">
+                                    <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- Add other milestones similarly -->
+    </ul>
+</section>
