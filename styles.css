@@ -221,7 +221,7 @@ ul.divide-y > li:not(:last-child)::after{
     margin-bottom: 20px; /* Mehr Abstand zwischen Milestones */
     padding: 20px; /* Mehr Innenabstand für Text */
     border-radius: 10px; /* Abgerundete Ecken */
-    border-bottom: 1px solid #dadada; /* Trennlinie */
+    border-bottom: 10px solid #dadada; /* Trennlinie */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
     display: flex;
     justify-content: space-between;
