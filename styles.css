@@ -160,9 +160,13 @@ iframe {
     color: #fff; /* Weißer Text beim Hover für Unterkapitel */
 }
 
+
+
 /* Kurs Einführungs Tesxt/
 
 /* Einführung Box */
+
+
 /* Einführung Box */
 .intro-section {
     max-width: 800px;
@@ -200,6 +204,71 @@ iframe {
 }
 
  /*Kurs Einführungsseite  */
+
+ /* Stil für die gesamte Liste */
+ul.divide-y {
+    background-color: #2d2d2d; /* Dunkelgrauer Hintergrund */
+    border-radius: 12px; /* Abgerundete Ecken */
+    padding: 20px; /* Innenabstand */
+    color: #fff; /* Weißer Text */
+    margin: 20px; /* Äußerer Abstand */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Schatten für schwebenden Effekt */
+    list-style-type: none; /* Keine Aufzählungszeichen */
+}
+
+/* Stil für einzelne Listenelemente */
+ul.divide-y li {
+    background-color: #3a3a3a; /* Etwas hellerer Kasten für Kontrast */
+    margin-bottom: 20px; /* Mehr Abstand zwischen Milestones */
+    padding: 20px; /* Mehr Innenabstand für Text */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ddd; /* Hellgrauer Text */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul.divide-y li:hover {
+    background-color: #444; /* Hellerer Hintergrund beim Hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deutlicherer Schatten */
+}
+
+/* Stil für den Titel (Milestone) */
+ul.divide-y li h6 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    color: #fff; /* Heller für mehr Kontrast */
+}
+
+/* Stil für kleinere Details (z. B. Datum) */
+ul.divide-y li p {
+    font-size: 0.9em;
+    color: #bbb; /* Dezent hellgrau */
+    margin-top: 5px;
+}
+
+/* Fortschrittsanzeige */
+ul.divide-y li div[role="progressbar"] {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #fff; /* Weißer Rand */
+    border-radius: 50%; /* Rund */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3a3a3a; /* Gleich wie Hintergrund */
+    transition: transform 0.3s ease;
+}
+
+ul.divide-y li:hover div[role="progressbar"] {
+    transform: scale(1.1); /* Leichte Vergrößerung beim Hover */
+}
+
+
+
 .einfuehrung-box {
     background-color: #333; /* Grauer Hintergrund */
     border-radius: 10px; /* Abgerundete Ecken */
