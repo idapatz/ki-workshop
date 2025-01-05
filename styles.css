@@ -217,6 +217,7 @@ ul.divide-y {
 }
 /* Stil für einzelne Listenelemente */
 ul.divide-y > li:not(:last-child)::after{
+    content: '';
     background-color: #2e2e2e; /* Etwas hellerer Kasten für Kontrast */
     margin-bottom: 20px; /* Mehr Abstand zwischen Milestones */
     padding: 20px; /* Mehr Innenabstand für Text */
