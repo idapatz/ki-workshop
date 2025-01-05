@@ -223,8 +223,9 @@ ul.divide-y > li:not(:last-child)::after{
     padding: 20px; /* Mehr Innenabstand für Text */
     border-radius: 10px; /* Abgerundete Ecken */
     border-bottom: 10px solid #ffffff; /* Trennlinie */
+    margin: 20px 0; /* Abstand ober- und unterhalb der Linie */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
     color: #ffffff; /* Hellgrauer Text */
