@@ -160,12 +160,14 @@ iframe {
     color: #fff; /* Weißer Text beim Hover für Unterkapitel */
 }
 
-
-
-/* Kurs Einführungs Tesxt/
-
-/* Einführung Box */
-
+/* Der Container für beide Bereiche in der Kurs Übersicht*/
+.content-container {
+    display: flex; /* Flexbox für die horizontale Ausrichtung */
+    justify-content: space-between; /* Platz zwischen den Elementen */
+    align-items: flex-start; /* Oben ausgerichtet */
+    gap: 20px; /* Abstand zwischen Einführung und Milestones */
+    margin: 20px; /* Optionaler Rand */
+  }
 
 /* Einführung Box */
 .intro-section {
@@ -205,7 +207,7 @@ iframe {
 
  /*Kurs Einführungsseite  */
 
- /* Stil für die gesamte Liste */
+ /* Stil für die Milestone Liste */
 ul.divide-y {
     background-color: #2d2d2d; /* Dunkelgrauer Hintergrund */
     border-radius: 12px; /* Abgerundete Ecken */
