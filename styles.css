@@ -199,6 +199,19 @@ iframe {
     color: #8fe009; /* Grün für Liste */
 }
 
+ /*Kurs Einführungsseite  */
+.einfuehrung-box {
+    background-color: #333; /* Grauer Hintergrund */
+    border-radius: 10px; /* Abgerundete Ecken */
+    color: #fff; /* Weiße Textfarbe */
+    font-family: Arial, sans-serif; /* Schriftart */
+    padding: 20px; /* Innenabstand */
+    margin: 20px 0; /* Außenabstand */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten für Tiefe */
+    max-width: 600px; /* Maximale Breite der Box */
+    line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
+}
+
  /*Kurs Progress Anzeige */
 
 .progress-container {
