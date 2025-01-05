@@ -218,16 +218,16 @@ ul.divide-y {
 
 /* Stil für einzelne Listenelemente */
 ul.divide-y li {
-    background-color: #575555; /* Etwas hellerer Kasten für Kontrast */
+    background-color: #2e2e2e; /* Etwas hellerer Kasten für Kontrast */
     margin-bottom: 20px; /* Mehr Abstand zwischen Milestones */
     padding: 20px; /* Mehr Innenabstand für Text */
     border-radius: 10px; /* Abgerundete Ecken */
-    border-bottom: 1px solid #ffffff; /* Trennlinie */
+    border-bottom: 1px solid #dadada; /* Trennlinie */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #ddd; /* Hellgrauer Text */
+    color: #ffffff; /* Hellgrauer Text */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 /* Entferne die Trennlinie vom letzten Element */
