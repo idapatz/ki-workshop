@@ -222,6 +222,7 @@ ul.divide-y li {
     margin-bottom: 20px; /* Mehr Abstand zwischen Milestones */
     padding: 20px; /* Mehr Innenabstand für Text */
     border-radius: 10px; /* Abgerundete Ecken */
+    border-bottom: 1px solid #555; /* Trennlinie */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
     display: flex;
     justify-content: space-between;
@@ -229,10 +230,9 @@ ul.divide-y li {
     color: #ddd; /* Hellgrauer Text */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
-ul.divide-y li:hover {
-    background-color: #444; /* Hellerer Hintergrund beim Hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deutlicherer Schatten */
+/* Entferne die Trennlinie vom letzten Element */
+ul.divide-y li:last-child {
+    border-bottom: none;
 }
 
 /* Stil für den Titel (Milestone) */
