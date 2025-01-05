@@ -205,7 +205,7 @@ iframe {
 
  /*Kurs Einführungsseite  */
 
- /* Stil für die gesamte Liste */
+/* Stil für die gesamte Liste */
 ul.divide-y {
     background-color: #2d2d2d; /* Dunkelgrauer Hintergrund */
     border-radius: 12px; /* Abgerundete Ecken */
@@ -215,35 +215,30 @@ ul.divide-y {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Schatten für schwebenden Effekt */
     list-style-type: none; /* Keine Aufzählungszeichen */
 }
+
 /* Trennlinie zwischen Milestones */
 ul.divide-y > li:not(:last-child)::after {
     content: "";
     display: block;
     height: 1px; /* Höhe der Trennlinie */
-    background-color: #dadada; /* Farbe der Trennlinie */
+    background-color: #ffffff; /* Farbe der Trennlinie */
     margin: 20px 0; /* Abstand ober- und unterhalb der Linie */
+}
+
 /* Stil für einzelne Listenelemente */
 ul.divide-y li {
     background-color: #2e2e2e; /* Etwas hellerer Kasten für Kontrast */
     margin-bottom: 20px; /* Mehr Abstand zwischen Milestones */
     padding: 20px; /* Mehr Innenabstand für Text */
     border-radius: 10px; /* Abgerundete Ecken */
-    border-bottom: 1px solid #dadada; /* Trennlinie */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #ffffff; /* Hellgrauer Text */
+    color: #ffffff; /* Weißer Text */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Stil für den Titel (Milestone) */
-ul.divide-y li h6 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin: 0;
-    color: #fff; /* Heller für mehr Kontrast */
-}
 
 /* Stil für kleinere Details (z. B. Datum) */
 ul.divide-y li p {
