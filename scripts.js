@@ -1,35 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const questions = document.querySelectorAll('.question'); // Alle Fragen finden
-    const nextButton = document.getElementById('continue-btn');
-    const backButton = document.getElementById('back-btn');
-    let currentQuestion = 0; // Start bei der ersten Frage
 
-    // Funktion, um die aktuelle Frage anzuzeigen
-    function showQuestion(index) {
-        questions.forEach((q, i) => {
-            q.style.display = i === index ? 'block' : 'none'; // Nur die aktuelle Frage anzeigen
-        });
-    }
-
-    // "Weiter"-Button
-    nextButton.addEventListener('click', () => {
-        if (currentQuestion < questions.length - 1) {
-            currentQuestion++;
-            showQuestion(currentQuestion);
-        }
-    });
-
-    // "Zurück"-Button
-    backButton.addEventListener('click', () => {
-        if (currentQuestion > 0) {
-            currentQuestion--;
-            showQuestion(currentQuestion);
-        }
-    });
-
-    // Zeige die erste Frage
-    showQuestion(currentQuestion);
-});
 
     // Modal-Elemente initialisieren
     const modal = document.getElementById('registerModal');
@@ -108,87 +77,64 @@ function loginUser() {
             alert('Fehler: ' + errorMessage);
         });
 }
+// Initialisiere die Progress-Bar und zeige die erste Frage
+initializeProgressBar(questions.length);
+showQuestion(currentQuestion);
 
-// Funktion für Kurs Feedback
-document.getElementById('submit-btn').addEventListener('click', function () {
-    const selectedOption = document.querySelector('input[name="definition"]:checked');
-    const feedback = document.getElementById('feedback');
+// Quiz-Funktionen hinzufügen
 
-    if (selectedOption) {
-        if (selectedOption.value === 'correct') {
-            feedback.textContent = '🎉 Richtig! Gut gemacht!';
-            feedback.style.color = 'green';
-        } else {
-            feedback.textContent = '❌ Falsch. Bitte versuche es erneut.';
-            feedback.style.color = 'red';
-        }
-        feedback.classList.remove('hidden');
+// Funktion, um Antworten zu überprüfen
+function antwortÜberprüfen(element, istRichtig) {
+    // Entferne vorherige Animationen, falls vorhanden
+    element.classList.remove('shake');
+
+    if (istRichtig) {
+        element.style.backgroundColor = '#737373';
+        zeigeFeedback(true);
     } else {
-        alert('Bitte wähle eine Option aus!');
+        element.classList.add('shake'); // Falsche Antwort wackelt
     }
-});
+}
 
-
-// Funktion zur Überprüfung der Antwort
-function checkAnswer(element, isCorrect) {
+// Funktion, um Feedback anzuzeigen
+function zeigeFeedback(istRichtig) {
     const feedback = document.getElementById('feedback');
     const feedbackText = document.getElementById('feedback-text');
 
-    if (isCorrect) {
-        element.classList.add('correct');
+    if (istRichtig) {
         feedbackText.textContent = '🎉 Richtig! KI imitiert menschliche Fähigkeiten und hilft, komplexe Aufgaben zu lösen.';
-        feedback.classList.add('visible');
-        enableNextButton();
-    } else {
-        element.classList.add('wrong');
-        setTimeout(() => {
-            element.classList.remove('wrong');
-        }, 300);
     }
+
+    // Feedback-Bereich einblenden
+    feedback.style.transform = 'translateY(0)';
 }
 
-// Funktion zum Aktivieren des Weiter-Buttons
-function enableNextButton() {
-    const nextButton = document.querySelector('.btn.next');
-    nextButton.disabled = false;
+// Funktion, um zum vorherigen Schritt zurückzukehren
+function zurück() {
+    const feedback = document.getElementById('feedback');
+
+    // Feedback-Bereich ausblenden
+    feedback.style.transform = 'translateY(100%)';
 }
 
-// Logik für den Zurück-Button
-function goBack() {
-    // Hier kannst du die Logik für das Zurückgehen implementieren
-    alert('Zurück zur vorherigen Frage.');
+// Funktion, um zur nächsten Frage zu wechseln
+function weiter() {
+    alert('Weiter zur nächsten Frage!');
+    // Hier kann weitere Logik für die nächste Frage implementiert werden
 }
 
-// Logik für den Weiter-Button
-function goNext() {
-    // Hier kannst du die Logik für das Weitergehen implementieren
-    alert('Weiter zur nächsten Frage.');
-}
+// Event-Listener für Hover-Effekte und Initialisierung
+window.onload = function () {
+    const answers = document.querySelectorAll('.answer');
 
-// Initialisierung der Progress-Bar
-function initializeProgressBar(totalQuestions) {
-    const progressBar = document.querySelector('.progress-bar');
-    for (let i = 0; i < totalQuestions; i++) {
-        const segment = document.createElement('div');
-        segment.classList.add('segment');
-        progressBar.appendChild(segment);
-    }
-}
+    answers.forEach((answer) => {
+        // Hover-Effekt hinzufügen
+        answer.addEventListener('mouseover', () => {
+            answer.style.backgroundColor = '#2a2a2a';
+        });
 
-// Funktion zum Aktualisieren der Progress-Bar
-function updateProgressBar(currentQuestion) {
-    const segments = document.querySelectorAll('.progress-bar .segment');
-    segments.forEach((segment, index) => {
-        if (index < currentQuestion) {
-            segment.classList.add('completed');
-        } else {
-            segment.classList.remove('completed');
-        }
+        answer.addEventListener('mouseout', () => {
+            answer.style.backgroundColor = '#1e1e1e';
+        });
     });
-}
-
-// Aufruf der Initialisierung (Beispiel mit 14 Fragen)
-initializeProgressBar(14);
-
-
-}
+};

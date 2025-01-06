@@ -38,33 +38,7 @@
         </div>
     </div>
 
-    <script>
-        function antwortÜberprüfen(element, istRichtig) {
-            const feedback = document.getElementById('feedback');
-            const feedbackText = document.getElementById('feedback-text');
-
-            if (istRichtig) {
-                element.classList.add('richtig');
-                feedbackText.textContent = '🎉 Richtig! KI imitiert menschliche Fähigkeiten und hilft, komplexe Aufgaben zu lösen.';
-                feedback.classList.add('sichtbar');
-            } else {
-                element.classList.add('falsch');
-                setTimeout(() => {
-                    element.classList.remove('falsch');
-                }, 300);
-            }
-        }
-
-        function zurück() {
-            // Logik für Zurück-Button
-            alert('Zurück zur vorherigen Frage.');
-        }
-
-        function weiter() {
-            // Logik für Weiter-Button
-            alert('Weiter zur nächsten Frage.');
-        }
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
