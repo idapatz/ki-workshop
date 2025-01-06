@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback-Seite</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS-Datei einbinden -->
+</head>
+<body>
+
+    <!-- Fortschrittsanzeige -->
+    <div class="progress-bar">
+        <div class="segment completed"></div>
+        <div class="segment"></div>
+        <div class="segment"></div>
+        <!-- Füge bei Bedarf weitere Segmente hinzu -->
+    </div>
+
+    <!-- Hauptcontainer -->
+    <div class="frage-container">
+        <!-- Fragenbereich -->
+        <div class="question">
+            <p>Lass uns mit der Definition von Künstlicher Intelligenz beginnen. Lies die Definitionen und wähle die richtige aus.</p>
+        </div>
+
+        <!-- Antwortmöglichkeiten -->
+        <div class="answer" onclick="antwortÜberprüfen(this, false)">KI ist eine Maschine, die schneller rechnen kann als ein Mensch.</div>
+        <div class="answer" onclick="antwortÜberprüfen(this, true)">KI ist die Fähigkeit einer Maschine, menschliche Fähigkeiten wie logisches Denken, Lernen, Planen und Kreativität zu imitieren.</div>
+        <div class="answer" onclick="antwortÜberprüfen(this, false)">KI ist jede Software, die von Unternehmen entwickelt wird.</div>
+    </div>
+
+    <!-- Feedbackbereich -->
+    <div class="feedback" id="feedback">
+        <p id="feedback-text">🎉 Richtig! KI imitiert menschliche Fähigkeiten und hilft, komplexe Aufgaben zu lösen.</p>
+        <div class="feedback-buttons">
+            <button class="btn back" onclick="zurück()">Zurück</button>
+            <button class="btn" onclick="weiter()">Weiter</button>
+        </div>
+    </div>
+
+    <script>
+        function antwortÜberprüfen(element, istRichtig) {
+            const feedback = document.getElementById('feedback');
+            const feedbackText = document.getElementById('feedback-text');
+
+            if (istRichtig) {
+                element.classList.add('richtig');
+                feedbackText.textContent = '🎉 Richtig! KI imitiert menschliche Fähigkeiten und hilft, komplexe Aufgaben zu lösen.';
+                feedback.classList.add('sichtbar');
+            } else {
+                element.classList.add('falsch');
+                setTimeout(() => {
+                    element.classList.remove('falsch');
+                }, 300);
+            }
+        }
+
+        function zurück() {
+            // Logik für Zurück-Button
+            alert('Zurück zur vorherigen Frage.');
+        }
+
+        function weiter() {
+            // Logik für Weiter-Button
+            alert('Weiter zur nächsten Frage.');
+        }
+    </script>
+
+</body>
+</html>

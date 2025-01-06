@@ -90,7 +90,7 @@ function registerUser() {
             const errorMessage = error.message;
             alert('Error: ' + errorMessage);
         });
-}
+
 
 // Funktion für den Login
 function loginUser() {
@@ -127,3 +127,68 @@ document.getElementById('submit-btn').addEventListener('click', function () {
         alert('Bitte wähle eine Option aus!');
     }
 });
+
+
+// Funktion zur Überprüfung der Antwort
+function checkAnswer(element, isCorrect) {
+    const feedback = document.getElementById('feedback');
+    const feedbackText = document.getElementById('feedback-text');
+
+    if (isCorrect) {
+        element.classList.add('correct');
+        feedbackText.textContent = '🎉 Richtig! KI imitiert menschliche Fähigkeiten und hilft, komplexe Aufgaben zu lösen.';
+        feedback.classList.add('visible');
+        enableNextButton();
+    } else {
+        element.classList.add('wrong');
+        setTimeout(() => {
+            element.classList.remove('wrong');
+        }, 300);
+    }
+}
+
+// Funktion zum Aktivieren des Weiter-Buttons
+function enableNextButton() {
+    const nextButton = document.querySelector('.btn.next');
+    nextButton.disabled = false;
+}
+
+// Logik für den Zurück-Button
+function goBack() {
+    // Hier kannst du die Logik für das Zurückgehen implementieren
+    alert('Zurück zur vorherigen Frage.');
+}
+
+// Logik für den Weiter-Button
+function goNext() {
+    // Hier kannst du die Logik für das Weitergehen implementieren
+    alert('Weiter zur nächsten Frage.');
+}
+
+// Initialisierung der Progress-Bar
+function initializeProgressBar(totalQuestions) {
+    const progressBar = document.querySelector('.progress-bar');
+    for (let i = 0; i < totalQuestions; i++) {
+        const segment = document.createElement('div');
+        segment.classList.add('segment');
+        progressBar.appendChild(segment);
+    }
+}
+
+// Funktion zum Aktualisieren der Progress-Bar
+function updateProgressBar(currentQuestion) {
+    const segments = document.querySelectorAll('.progress-bar .segment');
+    segments.forEach((segment, index) => {
+        if (index < currentQuestion) {
+            segment.classList.add('completed');
+        } else {
+            segment.classList.remove('completed');
+        }
+    });
+}
+
+// Aufruf der Initialisierung (Beispiel mit 14 Fragen)
+initializeProgressBar(14);
+
+
+}
